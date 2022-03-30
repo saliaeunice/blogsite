@@ -1,3 +1,6 @@
+@import url(reset.css);
+
+
 .layout{
   height: 100%;
   display: flex;
@@ -8,7 +11,6 @@
   flex: 1;
   max-width: 700px;
   margin: auto;
-
 }
 .appbar{
   background-color: crimson;
@@ -22,7 +24,7 @@
   font-weight: 700;
   color: whitesmoke;
 }
-.nav-link >a{
+.nav-link a{
   margin: 10px;
   text-decoration: none;
   color: white;
