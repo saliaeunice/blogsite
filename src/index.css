@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 .layout{
   height: 100%;
   display: flex;
@@ -8,7 +10,6 @@
   flex: 1;
   max-width: 700px;
   margin: auto;
-
 }
 .appbar{
   background-color: crimson;
@@ -22,10 +23,10 @@
   font-weight: 700;
   color: whitesmoke;
 }
-.nav-link >a{
-  margin: 10px;
-  text-decoration: none;
-  color: white;
+.nav-link a{
+margin: 10px;
+text-decoration: none;
+color: white;
 }
 .appbar > a:hover{
   text-decoration: underline;
@@ -35,4 +36,35 @@ footer{
   padding: 10px;
   text-align: center;
   color: whitesmoke;
+}
+.banner{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.banner >h1{
+  font-size: 50px;
+}
+.banner > p{
+  font-size: 20px;
+}
+.action-wrap{
+  transform: scale(0.9);
+}
+.btn-outline{
+  color: crimson;
+  background-color: transparent;
+  margin: 10px;
+  height: 50px;
+  width: 100px ;
+}
+.btn-contain{
+  background-color: crimson;
+  color: white;
+  margin: 10px;
+  height: 50px;
+  width: 100px;
 }

@@ -1,23 +1,27 @@
 import React from 'react'
 import withLayout from './withLayout'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+const navigate = useNavigate()
+
+
   return (
-    <div>
-    <h1>Welcome to my Homepage</h1>
-    <div>
-    <p>The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog
-    The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog.</p>
+<div>
+<div className='banner'>
+   <h1>Welcome to my webpage</h1> 
+<p>He has achieved success who has lived well, laughed often, and loved much;
+Who has enjoyed the trust of pure women, the respect of intelligent men and the love of little children;
+Who has filled his niche and accomplished his task;</p>
+<div className='action-wrap'>
+<button className='btn-outline' on onClick={()=>navigate("./about")}>About Me</button>
+<button className='btn-contain' on onClick={()=>navigate("./blogs")}>Read Blogs</button>
 
-    <p>The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog
-    The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog.</p>
-
-    <p>The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog
-    The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog.</p>
-    </div>
+</div>
+</div>
     
-    </div>
+</div>
   )
 }
 
-export default withLayout(Home)
+export default withLayout (Home)
