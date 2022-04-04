@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Quicksand&family=Roboto:wght@300&display=swap');
 html, body, div, span, object,
-iframe, h1, h2, h3, h4, h5, h6,
-p, blockquote,pre,abbr, address,
+iframe, h1, h2, h3, h4,
+ h5, h6,p, blockquote, pre,
+  abbr, address, 
 cite, code, del, dfn, em, img, ins,
 kbd, q, samp, small, strong, sub, sup,
-var, b, i, dl, dt,dd, ol, ul, li, fieldset,
-form, label, legend, table,
-caption, tbody, tfoot, thead, tr, th, td,
+var, b, i, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption,
 figure, footer, header, hgroup, menu, nav, section,
-summary, time,mark, audio,video{
+summary, time, mark, audio, video{
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    font-family: "mulish" sans-serif;
+    font-family: "Mulish" sans-serif;
     font-size: 100%;
     vertical-align: baseline;
-    background-color: transparent;
+    background: transparent;
 }
 html, body, div#root{
     height: 100%;
@@ -28,23 +29,22 @@ nav ul{
 }
 blockquote q{
     quotes: none;
-}
-article, aside, details, figcaption, figure, footer,hgroup,
+} 
+article, aside, details, figcaption, figure, footer, hgroup,
 menu, nav, section{
     display: block;
 }
-blockquote::before,
+blockquote:before,
 blockquote:after,
-p:before,
+q:before,
 q:after{
     content: "";
     content: none;
-}
+} 
 a{
     margin: 0;
     padding: 0;
     font-size: 100%;
-    vertical-align: baseline;
     background: transparent;
 }
 /*change colours to suit your needs*/
@@ -63,8 +63,8 @@ del{
     text-decoration: line-through;
 }
 abbr[title], dfn[title]{
-    border-bottom: 1px dotted;
-    cursor: help;
+border-bottom: 1px dotted;
+cursor: help;
 }
 table{
     border-collapse: collapse;
